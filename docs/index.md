@@ -3,7 +3,11 @@
 
 # vae-elbo-derivation
 
-A short implementation of the Variational Autoencoder with complete step-by-step ELBO and KL-term derivation, including mathematical explanations and examples on MNIST.
+\begin{center}
+{\Large \textbf{Variational Autoencoder (VAE): Generative Modeling via Variational Inference}}\[1.5em]
+{\large Volodymyr Borisenko}\
+{\large Johannes Kepler University Linz}\[2em]
+\end{center}
 
 ---
 
