@@ -21,27 +21,28 @@ In traditional autoencoders, an encoder–decoder pair learns to compress input 
 
 Let \(x \in \mathbb{R}^D\) denote observed data (e.g., images), and introduce a latent variable \(z \in \mathbb{R}^d\). We define the joint distribution:
 
-$$
+\[
 p_\theta(x, z)
 =
 p(z)\,p_\theta(x \mid z),
-$$
+\]
 
-where
-- \(p(z)=\mathcal{N}(0, I)\) is a simple prior in the latent space,
+where:
+
+- \(p(z) = \mathcal{N}(0, I)\) is a simple prior in the latent space.
 - \(p_{\theta}(x\mid z)\) is the decoder, a neural network mapping \(z\) to a distribution over \(x\).
 
 ---
 
 ## 2. Formula
 
-$$
+\[
 \mathrm{ELBO}
 =
 \mathbb{E}_{q_\phi(z\mid x)}\bigl[\log p_\theta(x\mid z)\bigr]
 \;-\;
 D_{\mathrm{KL}}\bigl(q_\phi(z\mid x)\,\|\,p(z)\bigr)
-$$
+\]
 
 ---
 
