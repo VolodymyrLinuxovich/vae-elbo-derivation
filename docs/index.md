@@ -53,7 +53,7 @@ Because $$p_{\theta}(x\mid z)$$ is parameterized by a deep network, this integra
 
 ### 1.3 Variational Inference and ELBO
 
-We ultimately care about how well our model $$\p_{\theta}$$ explains the data $$x$$. The rigorous quantity is
+We ultimately care about how well our model $$p_{\theta}$$ explains the data $$x$$. The rigorous quantity is
 
 $$
 \log p_\theta(x) \=\ \log \int p(z)\,p_\theta(x\mid z)\,\mathrm{d}z
@@ -71,7 +71,7 @@ We then rewrite
 $$
 \log p_\theta(x)
 = \log \int p_\theta(x, z)\,\mathrm{d}z
-= \log \int q_\phi(z\mid x)\,\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\,\mathrm{d}z
+= \log \int q_\phi(z\mid x)\\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\\mathrm{d}z
 $$
 
 so we’ve buried the intractable model density inside an expectation under our known $$q_\phi$$.
