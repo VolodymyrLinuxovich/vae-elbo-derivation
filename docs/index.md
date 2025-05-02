@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/0b88845f-ee6e-41ae-9523-5ab408acf579)<!-- MathJax -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 # vae-elbo-derivation
