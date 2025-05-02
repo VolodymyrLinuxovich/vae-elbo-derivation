@@ -2,8 +2,8 @@
 <div align="center">
 
 # Variational Autoencoder (VAE): Generative Modeling via Variational Inference
-Volodymyr Borysenko
-Johannes Kepler University Linz
+*Volodymyr Borysenko*
+*Johannes Kepler University Linz*
 
 </div>
 
