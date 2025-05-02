@@ -29,8 +29,9 @@ $$
 
 where:
 
-- $p(z) = \mathcal{N}(0, I)$ is a simple prior in the latent space.
-- $p_{\theta}(x\mid z)$ is the decoder, a neural network mapping $z$ to a distribution over $x$.
+- `$p(z) = \mathcal{N}(0, I)$` is a simple prior in the latent space.  
+- `$p_{\theta}(x \mid z)$` is the decoder, a neural network mapping `z` to a distribution over `x`.
+
 
 ---
 
