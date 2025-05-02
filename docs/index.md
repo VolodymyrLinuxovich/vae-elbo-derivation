@@ -71,7 +71,7 @@ We then rewrite
 $$
 \log p_\theta(x)
 = \log \int p_\theta(x, z)\\ dz
-= \log \int q_\phi(z\mid x)\\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\\ dz
+= \log \int q_\phi(z\mid x)\,\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\\ dz
 $$
 
 so we’ve buried the intractable model density inside an expectation under our known $$q_\phi$$.
