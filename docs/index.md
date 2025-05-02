@@ -18,9 +18,9 @@ In traditional autoencoders, an encoder–decoder pair learns to compress input 
 Let $$x$$ in $$\mathbb{R}^D$$ denote observed data (e.g., images), and introduce a latent variable $$z$$ in $$\mathbb{R}^d$$. We define the joint distribution:
 
 $$
-p_\theta(x, z)
+\p_\theta(x, z)
 =
-p(z)\,p_\theta(x \mid z),
+\p(z)\,p_\theta(x \mid z),
 $$
 
 where:
