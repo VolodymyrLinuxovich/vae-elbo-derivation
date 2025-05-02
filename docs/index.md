@@ -2,7 +2,8 @@
 
 <div align="center">
 
-**Variational Autoencoder (VAE): Generative Modeling via Variational Inference**
+#Variational Autoencoder (VAE): Generative Modeling via Variational Inference
+
 *Volodymyr Borysenko*
 
 </div>
