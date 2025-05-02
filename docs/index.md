@@ -11,8 +11,10 @@ A short implementation of the Variational Autoencoder with complete step-by-step
 
 $$
 \mathrm{ELBO}
-= \mathbb{E}_{q_\phi(z\mid x)}[\log p_\theta(x\mid z)]
-- D_{\mathrm{KL}}\bigl(q_\phi(z\mid x)\,\|\,p(z)\bigr).
+=
+\mathbb{E}_{q_\phi(z\mid x)}\bigl[\log p_\theta(x\mid z)\bigr]
+\;-\;
+D_{\mathrm{KL}}\bigl(q_\phi(z\mid x)\,\|\,p(z)\bigr)
 $$
 
 ---
