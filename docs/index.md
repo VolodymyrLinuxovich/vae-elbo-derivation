@@ -42,7 +42,7 @@ Before optimization, we write the definition of the marginal likelihood as an in
 $$
 \log p_{\theta}(x)
 = \log \int p_{\theta}(x, z) \, dz
-= \log \int p(z)\,p_{\theta}(x \mid z) \, dz.
+= \log \int p(z)\,p_{\theta}(x \mid z) \ dz.
 $$
 
 Here:
@@ -70,8 +70,8 @@ We then rewrite
 
 $$
 \log p_\theta(x)
-= \log \int p_\theta(x, z)\,\mathrm{d}z
-= \log \int q_\phi(z\mid x)\\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\\mathrm{d}z
+= \log \int p_\theta(x, z)\\ dz
+= \log \int q_\phi(z\mid x)\\frac{p_\theta(x, z)}{q_\phi(z\mid x)}\\ dz
 $$
 
 so we’ve buried the intractable model density inside an expectation under our known $$q_\phi$$.
