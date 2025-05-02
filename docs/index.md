@@ -2,7 +2,7 @@
 <div align="center">
 
 # Variational Autoencoder (VAE): Generative Modeling via Variational Inference
-*Volodymyr Borysenko*
+**Volodymyr Borysenko**
 *Johannes Kepler University Linz*
 
 </div>
@@ -31,17 +31,24 @@ where:
 
 ---
 
-## 2. Formula
+### 1.2 Intractability of Exact Likelihood
+
+The marginal log-likelihood measures how well our generative model explains the observed data. In principle, we seek parameters $$\theta$$ that maximize this quantity, but direct computation is infeasible:
+
+Before optimization, we write the definition of the marginal likelihood as an integral over the latent variable:
 
 $$
-\mathrm{ELBO}
-=
-\mathbb{E}_{q_\phi(z\mid x)}\bigl[\log p_\theta(x\mid z)\bigr]
-\;-\;
-D_{\mathrm{KL}}\bigl(q_\phi(z\mid x)\,\|\,p(z)\bigr)
+\log p_{\theta}(x)
+= \log \int p_{\theta}(x, z) \, dz
+= \log \int p(z)\,p_{\theta}(x \mid z) \, dz.
 $$
 
----
+Here:
+- $$p(z) = \mathcal{N}(0, I)$$ is a simple prior in latent space.
+- $$p_{\theta}(x\mid z)$$ is a neural-network decoder mapping latent variables to the data distribution.
+
+Because $$p_{\theta}(x\mid z)$$ is parameterized by a deep network, this integral cannot be solved analytically for general architectures. As a result, we require an alternative variational approach to approximate and optimize $$\log p_{\theta}(x)$$.
+
 
 ## 3. Installation
 
